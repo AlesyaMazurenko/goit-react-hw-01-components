@@ -9,7 +9,7 @@ const Profile = ({ username, tag, location, avatar, statsFoll, statsViews, stats
                 <img
                     src={avatar}//"https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
                     alt="User avatar"
-                    className="avatar"
+                    className="avatarProf"
                 />
                 <p className="name">{username}</p>
                 <p className="tag">{tag}</p>
