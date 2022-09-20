@@ -8,6 +8,9 @@ import data from './components/Statistics/data.json';
 import FriendList from './components/FriendList/FriendList';
 import friends from './components/FriendList/friends.json';
 
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './components/TransactionHistory/transactions.json';
+
 import randomColor from './components/Statistics/randomColor';
  
 export default function App() {
@@ -26,7 +29,9 @@ export default function App() {
       
       < Statistics key={data.id} title="Upload stats" stats={data} color={randomColor} />
 
-      <FriendList friends={friends } />
+      <FriendList friends={friends} />
+      
+      <TransactionHistory items={transactions} />
         </div>
   );
 }
